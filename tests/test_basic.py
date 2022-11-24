@@ -1,16 +1,9 @@
-# -*- coding: utf-8 -*-
+# content of test_sample.py
 
-from .context import sample
-
-import unittest
-
-
-class BasicTestSuite(unittest.TestCase):
-    """Basic test cases."""
-
-    def test_absolute_truth_and_meaning(self):
-        assert True
+from sample.helpers import get_tidy_data_path
+import pandas as pd
 
 
-if __name__ == '__main__':
-    unittest.main()
+def test_check_dataframe_size():
+    df = pd.read_parquet(get_tidy_data_path() / 'current_race.parquet')
+    assert df.shape[1] == 26

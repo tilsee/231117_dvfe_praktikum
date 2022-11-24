@@ -88,3 +88,16 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Jupyternotebooks
+*.ipynb
+
+# My Data
+/Data
+
+# Vs code Setting
+.vscode/
+
+# pytest
+.pytest_cache
+

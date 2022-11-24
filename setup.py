@@ -12,14 +12,13 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='formulaone',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='Downloads and prepares formula one data',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
+    author='Timo Schuerg',
+    author_email='t.schuerg@th-bingen.de',
     url='https://github.com/kennethreitz/samplemod',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
-
